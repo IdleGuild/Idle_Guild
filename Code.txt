@@ -17,8 +17,9 @@ Buttons
         name:Make a bunny
         desc:Click this little bunny to get more bunnies!
         on click:anim icon wobble
-        on click:yield 1 bunny
-        on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+        on click:yield 5 Rep
+	on clickif (chance(1%)) yield 1 G
+        on click:if (have goldenTouch and chance(1%)) yield 5 G
         icon:stuff/bunny.png
         no text
         class:bigButton hasFlares
@@ -48,13 +49,13 @@ Resources
             if (have clover) $boost=4
             if (chance(25%))
                 //get at least 7, or between 1 and 3 minutes of our bunny production
-                $amount=max(7,random(bunnies:ps*60*1,bunnies:ps*60*3))*$boost
+                $amount=max(7,random(G:ps*60*1,Rep:ps*60*3))*$boost
                 toast The lucky bunny grants you<//><b>[$amount] bunnies</b>.
                 yield $amount bunnies
             else
                 $amount=1*$boost
-                toast The lucky bunny grants you<//><b>[$amount] golden carrot[s?$amount]</b>!
-                yield $amount goldenCarrot
+                toast The lucky bunny grants you<//><b>[$amount] Rep[s?$amount]</b>!
+                yield $amount Rep
             end
         end
  
@@ -66,7 +67,7 @@ Buildings
         name:Rabbit cage|Rabbit cages
         desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.
         icon:icons[3,0]
-        cost:15 bunnies
+        cost:15 G
         on tick:yield 1 G
 	on tick:yield 0.1 Rep
         unlocked
