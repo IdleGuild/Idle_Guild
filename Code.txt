@@ -1,0 +1,26 @@
+Let's make a game!
+	name:Name
+	by:yoy56
+	desc:Your description here!
+	created:~~/~~/~~~~
+	updated:~~/~~/~~~~
+	version:0.1
+
+Settings
+	building cost refund:0%
+	building cost increase:0%
+
+Layout
+	use default
+Things
+	
+
+Resources
+	*Rep
+  		name:Reputation
+  		desc:This is your guild's Reputation, The higher your Reputation, to more places you can go to fight monsters.
+		is always:max(Rep)
+	*G
+		name:Gold
+		desc:This is your Gold, You use this to hire Adventurers to join your Guild.
+  
