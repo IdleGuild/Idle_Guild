@@ -14,7 +14,7 @@ Layout
 	use default
 Buttons
     *bunnyButton
-        name:Make a bunny
+        name:Make a G
         desc:Click this little bunny to get more bunnies!
         on click:anim icon wobble
         on click:yield 5 Rep
