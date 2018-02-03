@@ -36,6 +36,7 @@ Resources
 	*G
 		name:Gold
 		desc:This is your Gold, You use this to hire Adventurers to join your Guild.
+	*bunny
   Shinies
     *luckyBunny
         on click:log Woop
